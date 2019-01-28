@@ -27,3 +27,5 @@ workbox.core.setCacheNameDetails({prefix: "wis-test"});
 self.__precacheManifest = [].concat(self.__precacheManifest || []);
 workbox.precaching.suppressWarnings();
 workbox.precaching.precacheAndRoute(self.__precacheManifest, {});
+
+workbox.routing.registerRoute("/index.html", workbox.strategies.staleWhileRevalidate(), 'GET');
