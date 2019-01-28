@@ -28,4 +28,4 @@ self.__precacheManifest = [].concat(self.__precacheManifest || []);
 workbox.precaching.suppressWarnings();
 workbox.precaching.precacheAndRoute(self.__precacheManifest, {});
 
-workbox.routing.registerRoute("/index.html", workbox.strategies.staleWhileRevalidate(), 'GET');
+workbox.routing.registerRoute("https://dv-formateur.github.io./", workbox.strategies.staleWhileRevalidate(), 'GET');
